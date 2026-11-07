@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Opening Register My Mac with Microsoft 365…</title>
+<style>
+  body { margin:0; height:100vh; display:flex; align-items:center; justify-content:center;
+         background:#F5F5F7; font-family:"Open Sans",Calibri,system-ui,sans-serif; }
+  .box { background:#FFFFFF; border:1px solid #DEDEE2; padding:40px 36px; text-align:center; max-width:360px; }
+  h1 { font-size:18px; color:#0C0C12; margin:0 0 10px; }
+  p { font-size:14px; color:#5A5A64; margin:0 0 22px; line-height:1.5; }
+  a.btn { display:inline-block; background-color:#41007F; color:#FFFFFF !important; text-decoration:none;
+          font-weight:700; font-size:14px; padding:14px 30px; }
+</style>
+<script>
+  // Attempt the automatic hand-off to the Self Service+ policy. Many browsers require
+  // a user gesture for custom-scheme launches, so this is a bonus, not the only path.
+  window.location.href = "jamfselfservice://content?entity=policy&id=235&action=execute";
+</script>
+</head>
+<body>
+  <div class="box">
+    <h1>Opening Register My Mac with Microsoft 365…</h1>
+    <p>This should open automatically on your Mac. If nothing happens, click below.</p>
+    <a class="btn" href="jamfselfservice://content?entity=policy&id=235&action=execute">Run This Policy</a>
+  </div>
+</body>
+</html>
